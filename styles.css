@@ -9,33 +9,51 @@ header, footer {
     background-color: #1f2937;
 }
 
+nav, .hero, .information, .quotebox p, .call {
+    width: 80%;
+    margin: auto;
+}
+
 nav {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin: 0 auto;
 }
 
 .logo {
     height: 50px;
     width: auto;
-    margin: 5px 0;
+    margin: 10px 0;
 }
 
 a {
     text-decoration: none;
     color: #e5e7eb;
-    margin: 20px;
+    margin: 0 0 0 30px;
 }
 
 .hero {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: start;
+    margin: 50px auto;
+}
+
+.welcome {
+    margin: 40px 40px 40px 0;
+}
+
+.hero img {
+    height: 300px;
+    width: auto;
 }
 
 .welcome h1 {
     font-size: 48px;
     font-weight: 800;
     color: #f9faf8;
+    margin: 0;
 }
 
 .welcome p {
@@ -45,6 +63,11 @@ a {
 button {
     background-color: #3882f6;
     border: none;
+    color: #e5e7eb;
+    padding: 8px 25px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 15px;
 }
 
 .banner {
@@ -57,18 +80,84 @@ button {
     font-weight: 800;
     color: #1f2937;
     text-align: center;
+    margin: 40px 0;
 }
 
 .boxes {
     display: flex;
     justify-content: space-around;
+    height: 300px;
+    margin-bottom: 50px;
+}
+
+.box {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .box img {
-    width: 50px;
-    height: auto;
+    border-radius: 10px;
+    border: 5px solid #3882f6;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
 }
 
 .box p {
     font-size: 12px;
+    text-align: center;
+    width: 160px;
+}
+
+.quotebox {
+    background-color: #e5e7eb;
+    padding: 100px 0;
+}
+
+.quotebox p {
+    font-size: 36px;
+    font-style: italic;
+}
+
+.user {
+    font-style: normal;
+    text-align: right;
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+.call {
+    background-color: #3882f6;
+    margin: 50px auto;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.signup {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.signup h2, .signup p, .signup button {
+    color: #e5e7eb;
+    margin: 0;
+}
+
+.signup h2 {
+    font-size: 30px;
+}
+
+.signup button {
+    border: 2px solid #e5e7eb;
+    border-radius: 10px;
+    height: 50px;
+    font-size: 18px;
+}
+
+footer {
+    text-align: center;
+    color: #e5e7eb;
 }
